@@ -1,0 +1,62 @@
+.CoursewarePanel-warpper {
+  width: 100%;
+  height: 100%;
+
+  .webview {
+    width: 64rem;
+    height: 100%;
+    margin: auto;
+  }
+
+  .pptwebview {
+    width: 64rem;
+    height: 36rem;
+    margin: auto;
+  }
+
+  .pptControl {
+    padding: 0 .8rem 0 1.3rem;
+    height: 2.2rem;
+    width: inherit;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #474747;
+    position: absolute;
+    bottom: 0;
+
+    .ppt-icon {
+      cursor: pointer;
+      color: white;
+
+      .ant-iconfont {
+        font-size: 1rem;
+      }
+
+    }
+
+    .ppt-pause {
+      margin-right: 2rem;
+
+    }
+
+    .ppt-play {
+      margin-right: 1.1rem;
+
+    }
+
+    .ppt-prevSlide,
+    .ppt-nextSlide {
+      width: 6rem;
+      cursor: pointer;
+      color: white;
+      font-size: 1rem;
+    }
+
+    .ppt-slider {
+      width: 46rem;
+      margin-right: 1rem;
+    }
+  }
+
+}
