@@ -20,14 +20,18 @@ module.exports = {
     PROCESS_ENV: 'test',
     BASE_API: '1'
   },
+  <% if (env.includes('grey')) { %>
   GREY: {
     NODE_ENV: 'production',
     PROCESS_ENV: 'grey',
     BASE_API: '1'
   },
+  <% } %>
+  <% if (env.includes('pre')) { %>
   PRE: {
     NODE_ENV: 'production',
     PROCESS_ENV: 'pre',
     BASE_API: '1'
   },
+  <% } %>
 }

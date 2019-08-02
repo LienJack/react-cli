@@ -66,7 +66,7 @@ const getDllReferenceArr = () => {
 }
 const baseConfig = {
   entry: {
-    app: ['@babel/polyfill', 'react-hot-loader/patch', resolvePath('src/index.js')] // 入口
+    app: [<% if (mobile && polyfill) { %>'@babel/polyfill',<% } %> 'react-hot-loader/patch', resolvePath('src/index.js')] // 入口
   },
   output: {
     // path: resolve('dist'), // 出口路径

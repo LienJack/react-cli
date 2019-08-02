@@ -1,1 +1,4 @@
-import 'lib-flexible/flexible'
+<% if (mobile && flexible) { %>
+  import 'lib-flexible/flexible'
+<% } %>
+  

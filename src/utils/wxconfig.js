@@ -1,3 +1,4 @@
+<% if (mobile && weixin) { %>
 /**
  * 微信配置
  */
@@ -38,4 +39,4 @@ wx.error(function(res) {
 wx.ready(function() {
 
 })
-
+<% } %>
